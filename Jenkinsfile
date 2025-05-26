@@ -6,6 +6,11 @@ pipeline {
     }
 
     stages {
+    	stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
         stage('Setup') {
             steps {
                 sh 'python3 -m venv $VENV'
