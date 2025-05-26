@@ -10,3 +10,6 @@ def ping():
 def hello():
     return jsonify({"message": "Hello world"}), 200
 
+@api.route("/")
+def home():
+    return jsonify({"message": "Home"}), 200
