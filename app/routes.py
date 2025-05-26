@@ -13,3 +13,7 @@ def hello():
 @api.route("/")
 def home():
     return jsonify({"message": "Home"}), 200
+
+@api.route("/add")
+def add():
+    return jsonify({"message:" "soma"}), 200
